@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculater</title>
+</head>
+<body>
+<input type="text" id="Value3">
+<input type="text" id="Value2" >
+<br/>
+<input type="radio" name="check" id="plus" checked>Plus
+<input type="radio" name="check" id="minus">Minus
+<input type="radio" name="check" id="mullti">Multi
+<input type="radio" name="check" id="div">Div<br/>
+<button type="button" id="Btn" onclick="firstfun()">SUBMIT</button>
+<p id="Value1"></p>
+<script type="text/javascript">
+	function firstfun() {
+  var Value3 = parseFloat(document.getElementById('Value3').value);
+  var Value2 = parseFloat(document.getElementById('Value2').value);
+
+  if (document.getElementById('plus').checked) {
+  	alert(Value3 + Value2);
+  }
+  if (document.getElementById('minus').checked) {
+  	alert(Value3 - Value2);
+  }
+  if (document.getElementById('mullti').checked) {
+  	alert(Value3 * Value2);
+  }
+  if (document.getElementById('div').checked) {
+  	alert(Value3 / Value2);
+  }
+ }	
+</script>
+</body>
+</html>
